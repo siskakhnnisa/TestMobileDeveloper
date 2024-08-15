@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_night"
+    android:id="@+id/main">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circle_background"
+        android:padding="30dp"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/ic_person" />
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_profile"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/name"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="#888888"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        android:inputType="textPersonName" />
+
+    <!-- Palindrome Input Field -->
+    <EditText
+        android:id="@+id/et_palindrome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/palindrome"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="#888888"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        android:inputType="text" />
+
+    <!-- Check Button -->
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_palindrome"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check"
+        android:background="@drawable/button_bg"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/medium"
+        android:padding="8dp"
+        android:textAllCaps="false" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_check"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        android:background="@drawable/button_bg"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/medium"
+        android:padding="8dp"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
